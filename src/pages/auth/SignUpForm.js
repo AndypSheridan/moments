@@ -42,12 +42,12 @@ const SignUpForm = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            console.log('IN TRY BLOCK'. signUpData)
+            // console.log('IN TRY BLOCK'.signUpData)
             await axios.post("/dj-rest-auth/registration/", signUpData);
             history.push("/signin");
         } catch (err) {
             setErrors(err.response?.data);
-            console.log('ERROR', err)
+            // console.log('ERROR', err)
         }
     };
 

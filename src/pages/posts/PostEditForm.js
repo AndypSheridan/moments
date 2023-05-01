@@ -79,7 +79,7 @@ function PostEditForm() {
         
 
         try {
-            await axiosReq.put(`/posts/%{id}/`, formData);
+            await axiosReq.put(`/posts/${id}/`, formData);
             history.push(`/posts/${id}`);
         } catch (err) {
             console.log(err);
@@ -126,13 +126,13 @@ function PostEditForm() {
                 className={`${btnStyles.Button} ${btnStyles.Blue}`}
                 onClick={() => history.goBack()}
             >
-                cancel
+                Cancel
             </Button>
             <Button
                 className={`${btnStyles.Button} ${btnStyles.Blue}`}
                 type="submit"
             >
-                create
+                Save
             </Button>
         </div>
     );

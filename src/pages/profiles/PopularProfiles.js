@@ -26,7 +26,7 @@ const PopularProfiles = ({mobile}) => {
                     </div>
             ) : (
                 popularProfiles.results.map((profile) => (
-                <Profile key={profile.div} profile={profile} />
+                <Profile key={profile.id} profile={profile} />
             ))
 
             )}      

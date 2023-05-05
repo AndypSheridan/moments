@@ -29,7 +29,7 @@ const SignUpForm = () => {
 
     const history = useHistory();
 
-    console.log(signUpData)
+    // console.log(signUpData)
 
     const [errors, setErrors] = useState({});
 
